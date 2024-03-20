@@ -7,10 +7,12 @@
 body {
   margin: 0;
   font-family: "Electrolize", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  overflow: hidden;
 }
 .ant-btn-primary {
   background-color:#1677ff ;
+}
+.categories::-webkit-scrollbar{
+  display: none;
 }
 

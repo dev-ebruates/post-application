@@ -2,9 +2,21 @@ import Header from "./components/header/Header";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <div className="home px-6 flex justify-between">
+        <div className="categories">
+          <div>categories</div>
+        </div>
+        <div className="products">
+          <div>products</div>
+        </div>
+        <div className="">
+          <div>cart totals</div>
+        </div>
+      </div>
+      
+    </>
   );
 }
 

@@ -1,12 +1,24 @@
 import { Button } from "antd";
 import {ClearOutlined} from "@ant-design/icons"
+import CartItem from "./CartItem";
 const CartTotals = () => {
   return (
     <div className="cart h-full flex max-h-[calc(100vh_-_90px)] flex-col">
       <h2 className="bg-blue-600 text-center py-4 text-white font-bold tracking-wide">
         Sepetteki Ürünler
       </h2>
-      <div className="cart-items">cart item</div>
+      <ul className="cart-items px-2  overflow-y-auto py-2 flex flex-col gap-y-3 pt-2">
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+
+            
+      </ul>
+
       <div className="cart-totals mt-auto">
         <div className="border-b border-t">
           <div className="flex justify-between p-2">

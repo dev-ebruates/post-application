@@ -1,8 +1,11 @@
 import Header from "../components/header/Header";
-import React from "react";
+import React, { useState } from "react";
 import { Table ,Card, Button  } from "antd";
+import CreateBill from "./CreateBill";
 
 const CartPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+ 
   const columns = [
     {
       title: "Ürün Adı",
@@ -45,8 +48,9 @@ const CartPage = () => {
     },
   ];
   return (
-    <div className="px-6">
+    < >
       <Header />
+      <div className="px-6">
       <div> <Table columns={columns} dataSource={data} bordered pagination={false}/></div>
       <div className="cart-total flex justify-end mt-4">
       <Card className="w-72 ">
@@ -62,10 +66,12 @@ const CartPage = () => {
         <b>Toplam</b>
         <b>118.80₺</b>
       </div>
-      <Button type="primary" className="mt-4 w-full" size="large">Sipariş Oluştur</Button>
+      <Button onClick={()=>setIsModalOpen(true)} type="primary" className="mt-4 w-full" size="large">Sipariş Oluştur</Button>
     </Card>
       </div>
-    </div>
+      </div>
+     <CreateBill isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+    </>
   );
 };
 

@@ -32,16 +32,16 @@ const CartTotals = () => {
         </div>
         <div className="border-b mt-4">
           <div className="flex justify-between p-2">
-            <b className="text-lg text-xl text-green-500">Genel Toplam</b>
+            <b className="md:text-lg text-xl text-green-500">Genel Toplam</b>
             <span className="text-xl">99₺</span>
           </div>
         </div>
         <div className="py-4 px-2">
-          <Button type="primary" size="large" className="w-full">
+          <Button type="primary" size="large" className="w-full ">
             Sipariş Oluştur
           </Button>
 
-          <Button type="primary" size="large" className="w-full mt-2 flex items-center justify-center" danger icon={<ClearOutlined />}>
+          <Button type="primary" size="large" className="w-full mt-2 flex items-center " danger icon={<ClearOutlined />}>
             Temizle
           </Button>
         </div>

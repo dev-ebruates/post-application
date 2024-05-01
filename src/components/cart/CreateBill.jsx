@@ -10,20 +10,27 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
       open={isModalOpen}
       onCancel={() => setIsModalOpen(false)}
       footer={false}
-    
     >
-      <Form layout={"vertical"}   onFinish={onFinish}>
-        <Form.Item label="Müşteri Adı" 
-        name={"customerName"}
-        rules={[{ required: true }]}>
+      <Form layout={"vertical"} onFinish={onFinish}>
+        <Form.Item
+          label="Müşteri Adı"
+          name={"customerName"}
+          rules={[{ required: true }]}
+        >
           <Input placeholder="Bir müşteri adı yazınız" />
         </Form.Item>
-        <Form.Item label="Tel No"
-        name={"phoneNumber"} rules={[{ required: true }]}>
+        <Form.Item
+          label="Tel No"
+          name={"phoneNumber"}
+          rules={[{ required: true }]}
+        >
           <Input placeholder="Bir tel no yazınız" />
         </Form.Item>
-        <Form.Item label="Ödeme Yöntemi"
-        name={"paymentMode"} rules={[{ required: true }]}>
+        <Form.Item
+          label="Ödeme Yöntemi"
+          name={"paymentMode"}
+          rules={[{ required: true }]}
+        >
           <Select placeholder="Nakit">
             <Select.Option value="Nakit">Nakit</Select.Option>
             <Select.Option value="Kredi Kartı">Kredi Kartı</Select.Option>

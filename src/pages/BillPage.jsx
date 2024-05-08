@@ -11,7 +11,7 @@ const BillPage = () => {
       title: "Ürün Adı",
       dataIndex: "name",
       key: "name",
-      render: (text) => <a>{text}</a>,
+      // render: (text) => <a>{text}</a>,
     },
     {
       title: "Ürün Görseli",
